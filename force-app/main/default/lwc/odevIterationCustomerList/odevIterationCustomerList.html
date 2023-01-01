@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Customer List Iteration">
+        <ul>
+
+      
+        <template iterator:it={customerList}>
+            <li key={it.value.id}>
+                <!-- <p key={it.value} if:true={it.first}>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p> -->
+                <p key={it.id}>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <p key={it.id}>{it.value.id}</p>
+                <p key={it.name} >{it.value.name}</p>
+                <p key={it.phone}>{it.value.phone}</p>
+                <p key={it.email} class="c1">{it.value.email}</p>
+                <img src={it.value.imgURL} alt="">
+                <p key={it.value} if:true={it.last}>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+            </li>
+            
+
+        </template>
+
+        </ul>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,24 @@
+<template>
+    <!-- 11 -->
+    <lightning-card title="Search Account">
+        <lightning-input type="text" onchange={handleInput}></lightning-input>
+        <!-- 12- List i satır satır gösterebilmek için for each kullanalım -->
+        <!-- f- lightning button oluşturalım -->
+        <lightning-button label="Get Account" onclick={handleGetAccount}></lightning-button>
+        <ul>
+            <template for:each={accounts} for:item="w"> <!-- 13- gelen account un içinde data ve error  diye iki farklı veri vardır. -->
+                                                                <!-- sorgu başarılı ise data'nın değil ise error un içi doludur. -->
+                                                                <!-- g- data yı sil.imperatively de yazılmıyor . Class a git-->
+                <li key={w.id}>
+                    Name : {w.Name};
+                    Tel : {w.Phone}; <!-- Deploy -->
+
+                </li>
+
+
+            </template>
+        </ul>
+
+    </lightning-card>
+    
+</template>

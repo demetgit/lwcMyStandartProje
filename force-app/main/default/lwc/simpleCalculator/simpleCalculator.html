@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Hesap Makinesi">
+        <lightning-input type="number" label="number 1" onchange={number1Handler}></lightning-input>
+        <lightning-input type="number" label="number 2" onchange={number2Handler}></lightning-input>
+
+        <lightning-button-group>
+            <lightning-button label="Toplama" onclick={toplama}></lightning-button>
+            <lightning-button label="Cikarma" onclick={cikarma}></lightning-button>
+            <lightning-button label="Carpma" onclick={carpma}></lightning-button>
+            <lightning-button label="Bolme" onclick={bolme}></lightning-button>
+        </lightning-button-group>
+
+        <div>Sonuç = {result}</div>
+        <lightning-input type="checkbox" label="Önceki Sonuçları Göster" onchange={eskiDegerHandler}></lightning-input>
+        <div>Önceki Sonuç = {gecmisDegerler}</div>
+
+        <template if:true={eskiDeger}>
+            <ul>
+                <template for:each={gecmisDegerler} for:item="w">
+                    <li key={w}>
+                        {w}
+    
+                    </li>
+    
+                </template>
+            </ul>
+        </template>
+        
+    
+    </lightning-card>
+    
+</template>

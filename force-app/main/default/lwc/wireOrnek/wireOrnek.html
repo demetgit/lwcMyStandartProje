@@ -1,0 +1,22 @@
+<template>
+    <!-- 11 -->
+    <lightning-card title="Search Account">
+        <lightning-input type="text" onchange={handleInput}></lightning-input>
+        <!-- 12- List i satır satır gösterebilmek için for each kullanalım -->
+        <ul>
+            <template for:each={accounts.data} for:item="w"> <!-- 13- gelen account un içinde data ve error  diye iki farklı veri vardır. -->
+                                                                <!-- sorgu başarılı ise data'nın değil ise error un içi doludur. -->
+
+                <li key={w.id}>
+                    Name : {w.Name};
+                    Tel : {w.Phone}; <!-- Deploy -->
+
+                </li>
+
+
+            </template>
+        </ul>
+
+    </lightning-card>
+    
+</template>

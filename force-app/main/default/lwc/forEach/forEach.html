@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="for each dongüsü"> <!-- 2- -->
+
+        <template for:each={cityList} for:item="w">
+            <p key={w}>{w}</p> <!-- key={w.id} de yazıla bilirdi. -->
+
+        </template>
+
+    </lightning-card>
+<!-- ----------------------------------------------- -->
+    <lightning-card title="Müşteri Listesi">
+    <ul>
+        <template for:each={customerList} for:item="w">
+            <li key={w.id}> <!-- sadece {w} da yazabilirdik -->
+                <div>{w.id}</div>
+                <div>{w.name}</div>
+                <div>{w.phone}</div>
+                <div>{w.email}</div>
+                <!--  <div>{w.imgURL}</div> --> şeklinde yazarsak sadece yazı şeklinde gösterir.
+                <img src={w.imgURL} alt="">
+            </li>
+
+        </template>
+    </ul>
+    </lightning-card>
+    
+</template>

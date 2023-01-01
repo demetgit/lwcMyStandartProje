@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Ayni Componenttaki Standart event">
+        <lightning-button variant="success" label="Success" 
+        title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    
+        <div class="slds-m-vertical_medium">
+            <p>The label of the button that was clicked is: <span class="slds-text-heading_small">{clickedButtonLabel}</span></p>
+        </div>
+    </lightning-card>
+
+    <!-- -------------------------------------------------------------------- -->
+<lightning-card title="Handle child event in parent HTML">
+    <c-event-child onclick={handleClick1}></c-event-child>
+
+
+
+</lightning-card>
+
+<!-- --------------------------------------30.12.2022 -->
+<lightning-card title="handle Child event in parent JS"></lightning-card>
+<c-event-child1></c-event-child1>
+
+
+</template>

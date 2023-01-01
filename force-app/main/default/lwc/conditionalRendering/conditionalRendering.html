@@ -1,0 +1,25 @@
+<template>
+    <!-- 2- Card oluşturalım -->
+    <lightning-card title="if true-false kullanımı">
+
+        <h1>flag durumu = {flag}</h1> <!-- 3- Falg ın durumunu görmek için h1 ekleyelim -->
+        <template if:true={flag}> <!-- 4- tırnakları silip JS teki property i yazdık -->
+            <h1> flag true, bu mesaj görüldü</h1> <!-- 5- Deploy and test -->
+
+        </template>
+    </lightning-card>
+<!-- ----------------------------------------------------------------- -->
+    <!-- B Yeni card oluşturduk -->
+    <lightning-card title="Sozleşme">
+        <template if:false={display}>
+            <h1>Lütfen bu sözleşmeyi kabul ediniz</h1>
+
+        </template>
+
+        <lightning-input type="checkbox" label="Kabul ediniz" onchange={handleChange}></lightning-input>
+
+
+    </lightning-card>
+
+    
+</template>

@@ -1,0 +1,9 @@
+h1{
+    color: red;
+}
+c-slot-child p{
+    color: blue;
+}
+p{
+    color: darkgreen;
+}

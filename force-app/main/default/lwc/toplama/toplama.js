@@ -1,0 +1,22 @@
+import { LightningElement } from 'lwc';
+
+export default class Toplama extends LightningElement {
+    num1 = 5;
+    num2 = 7;
+
+    get toplam(){
+        //return `${this.num1} + ${this.num2}`;// Concatinate yapar.5 + 7 şeklinde verir.
+        //return parseInt(this.num1) + parseInt(this.num2); bu çalışır
+        return `${parseInt(this.num1) + parseInt(this.num2)}`;
+    }
+
+    handleNum1(event){
+        this.num1 = event.target.value;
+
+    }
+
+    handleNum2(event){
+        this.num2 = event.target.value;
+
+    }
+}

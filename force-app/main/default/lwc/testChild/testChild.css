@@ -1,0 +1,18 @@
+p{
+    color: var(--prenk, green);
+
+}
+h1{
+    background-color: var(--bh1renk, blue);
+    color: var(--h1renk, yellow);
+
+}
+h3{
+    color: brown;
+
+}
+span{
+    background-color: aqua;
+    color: darkblue;
+
+}

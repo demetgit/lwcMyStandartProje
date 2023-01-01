@@ -1,0 +1,19 @@
+h1{
+    color: brown;
+}
+p{
+    color: aqua;
+}
+lightning-card{
+    color: azure;
+}
+/*
+h2{
+    color: yellow;
+}
+dinamik değil hooks yaparsam parentten bunu değiştiremem */
+
+h2{
+    color: var(--renk, yellow); /* Artık parentten değiştirebilirim */
+}
+/* Burada let kullanılmaz çünkü scope elemandır. Bu değişkeni --renk artık parent ta kullanabiliriz */

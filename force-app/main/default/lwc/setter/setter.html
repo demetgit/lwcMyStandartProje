@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Setter">
+        <lightning-input type="number" label="Yeni Yaşı Giriniz" onchange={updateAge}></lightning-input>
+        <lightning-button label="Yeni Yaşı Görmek İçin Tıklayınız" onclick={updateOrginalAge}></lightning-button>
+
+        <h1>İsim: {name}</h1>
+        <h1>Yaş: {age}</h1>
+        <h1>Yeni Yaş: {newAge}</h1>
+        <!-- ----------------------------------------------------- -->
+        <h1>getter ile yeni yaş +1 : {age1}</h1>
+
+    </lightning-card>
+
+    <lightning-card title="Parenttan Childa Data Aktarımı">
+        <c-setter-child customer={customerDetail.name}></c-setter-child>
+        <c-setter-child customer={customerDetail.age}></c-setter-child>
+    </lightning-card>
+
+<!-- d ------------------------------------------------------ -->
+    <lightning-card title="Calculated Age">
+        <c-setter-child1 customer-age={parentAge}></c-setter-child1>
+    </lightning-card>
+</template>

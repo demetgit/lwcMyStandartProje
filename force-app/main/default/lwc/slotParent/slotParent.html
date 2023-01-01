@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Slot Parent">
+        <h1>1. Parent Header</h1>
+
+        <c-slot-child>
+            <h1>5. Child Slot Header</h1>
+            <p>6. Child Slot Paragraph</p>
+        </c-slot-child>
+
+        <p>4. Parent Paragraph</p>
+
+        <c-slot-child-named>
+
+            <span slot="l">Levent</span>
+            <div slot="a">Ayşe</div>
+            <div slot="h">Hasan</div>
+
+        </c-slot-child-named>
+    </lightning-card>
+</template>
