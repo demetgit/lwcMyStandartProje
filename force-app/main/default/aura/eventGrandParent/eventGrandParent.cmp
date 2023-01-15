@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <div>merhaba, Grand Parettan geldim</div>
+    <aura:handler name="myEvent" event="c:firstEvent" action="{!c.handleEvent}"/>
+    <c:eventParentAura/>
+</aura:component> 

@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:handler name="myEvent" event="c:firstEvent" action="{!c.handleEvent}"/> <!-- 5 -->
+    <div>Merhaba, Parent Componet'dan geldim</div>
+    <c:eventChildAura/>
+</aura:component>	
