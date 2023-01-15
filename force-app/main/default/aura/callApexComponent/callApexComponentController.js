@@ -11,6 +11,6 @@
                 console.log("Islem basarisiz");
             }
         });
-
+            $A.enqueueAction(action);
     }
 })
