@@ -3,4 +3,11 @@ public with sharing class ApexAura {
     public static String getApexMessage(){
         return 'Bu mesaj Apex den gelmektedir';
     }
+
+@AuraEnabled(cacheable=true)
+public static Account getAccount(){
+    Account acc= [SELECT Id,Name,Phone FROM Account WHERE Name LIKE '%Edge%' LIMIT 1] ;//icinde edge geceni getr
+
+        return acc;
+}
 }

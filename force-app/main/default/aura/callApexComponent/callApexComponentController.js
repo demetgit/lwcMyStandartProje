@@ -11,6 +11,6 @@
                 console.log("Islem basarisiz");
             }
         });
-            $A.enqueueAction(action);
+            $A.enqueueAction(action); //async apex oldugu icin,kuyruk a eklemek icin bu yazlr
     }
 })
