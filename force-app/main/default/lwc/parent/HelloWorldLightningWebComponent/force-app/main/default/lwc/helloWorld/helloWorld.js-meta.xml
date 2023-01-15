@@ -8,9 +8,4 @@
         <target>lightning__RecordPage</target>
         <target>lightning__Tab</target>
     </targets>
-    <targetConfigs>
-        <targetConfig targets="lightning__HomePage">
-            <property name="subject" type="String" />
-        </targetConfig>
-    </targetConfigs>
 </LightningComponentBundle>

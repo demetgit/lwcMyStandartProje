@@ -18,6 +18,6 @@ export default class Parent extends LightningElement {
      this.eventName3 = event.detail.isim + ' ' + event.detail.soyisim;
     }
     handleButtonClick4(event) {
-        this.eventName4 = event.detail.wherearefrom + ' ' + event.detail.city;
+        this.eventName4 = event.detail.isim + ' ' + event.detail.soyisim;
        }
    }
