@@ -8,7 +8,9 @@
     
     <div>Parent Attribute = {!v.parentAttr}</div>
    <!--<c:child1Aura childAttr="{!v.parentAttr}"></c:child1Aura> D,onclckhandler icin parentController a git -->
-   <c:child1Aura childAttr="{#v.parentAttr}"></c:child1Aura> <!--E, bound exp yaptgmz icin child da degsti,bunu durdrumak icin ! yerine # -->
+  <!--<c:child1Aura childAttr="{#v.parentAttr}"></c:child1Aura> E, bound exp yaptgmz icin child da degsti,bunu durdrumak icin ! yerine # -->
+   <c:child1Aura childAttr="{!v.parentAttr}"></c:child1Aura> <!-- F -->
+
     </lightning:card>
 
 </aura:component>	
