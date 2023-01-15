@@ -1,5 +1,5 @@
 ({
-    myAction : function(component, event, helper) {
-
+    onclickHandler : function(component, event, helper) {
+component.set("v.parentAttr","yeni deeger parent controller dan geldi");
     }
 })

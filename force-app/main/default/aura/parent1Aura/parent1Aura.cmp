@@ -1,3 +1,14 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
+     <aura:attribute name="parentAttr" type="String" default="default value"/> <!-- C ,atrbuteler card dısında tanmlanr -->
+
+
+    <lightning:card>
+
+    <lightning:button name="changevalue" label="Change Parent" onclick="{!c.onclickHandler}"></lightning:button>
+    
+    <div>Parent Attribute = {!v.parentAttr}</div>
+    <c:child1Aura childAttr="{!v.parentAttr}"></c:child1Aura> <!-- D,onclckhandler icin parentController a git -->
+
+    </lightning:card>
 
 </aura:component>	
