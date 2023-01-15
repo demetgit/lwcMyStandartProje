@@ -10,4 +10,14 @@ public static Account getAccount(){
 
         return acc;
 }
+
+@AuraEnabled(cacheable=true)
+public static Account getAccountParams(String accName){ //inputtan veri alacagm icin parametre grmem lazm ondan params
+   
+    String searchKey='%' + accName + '%';
+    Account acc= [SELECT Id,Name,Phone FROM Account WHERE Name LIKE :searchKey LIMIT 1] ;//icinde edge geceni getr
+
+        return acc;
+}
+
 }
